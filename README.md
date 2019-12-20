@@ -11,18 +11,18 @@ To simplify the access to internal host the alias was configured in ssh configur
 ssh someinternalhost
 
 Here is the listing of the SSH configuration file:
-host bastion
-        User Ganhart
-        HostName 35.210.214.67
-        Port 22
-        IdentityFile ~/.ssh/Ganhart
-        ForwardAgent yes
+	host bastion
+        	User Ganhart
+        	HostName 35.210.214.67
+        	Port 22
+        	IdentityFile ~/.ssh/Ganhart
+        	ForwardAgent yes
 
-host someinternalhost
-        User Ganhart
-        hostname 10.132.0.4
-        Port 22
-        ProxyJump bastion
+	host someinternalhost
+        	User Ganhart
+        	hostname 10.132.0.4
+        	Port 22
+        	ProxyJump bastion
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
