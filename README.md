@@ -1,7 +1,8 @@
 # Aritain_infra
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-Aritain Infra repository
+bastion_IP = 35.210.214.67
+someinternalhost_IP = 10.132.0.4
 
 Доступ на интернал-хост в GCP осуществляется при помощи команды
 ssh -t -i ~/.ssh/Ganhart -A Ganhart@*Внешний IP-адрес bastion* ssh *Внутренний IP-адрес интернал-хоста*
@@ -26,10 +27,9 @@ host someinternalhost
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 Разные полезные вещи:
-----------
+
 Добавить SSH ключ для проброса в GCP
 
-eval $(ssh-agent)
-ssh-add ~/.ssh/Ganhart
-ssh-add -L - проверка
-----------
+	eval $(ssh-agent)
+	ssh-add ~/.ssh/Ganhart
+	ssh-add -L - проверка
