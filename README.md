@@ -11,6 +11,7 @@ To simplify the access to internal host the alias was configured in ssh configur
 ssh someinternalhost
 
 Here is the listing of the SSH configuration file:
+
 	host bastion
         	User Ganhart
         	HostName 35.210.214.67
