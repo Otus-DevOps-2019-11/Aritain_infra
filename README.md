@@ -4,13 +4,13 @@
 bastion_IP = 35.210.214.67
 someinternalhost_IP = 10.132.0.4
 
-Доступ на интернал-хост в GCP осуществляется при помощи команды
-ssh -t -i ~/.ssh/Ganhart -A Ganhart@*Внешний IP-адрес bastion* ssh *Внутренний IP-адрес интернал-хоста*
+The following command can be used for a direct access to internal host in GCP via bastion host
+ssh -t -i ~/.ssh/Ganhart -A Ganhart@*External bastion IP* ssh *Internal host IP*
 
-Для простоты был создал соответствующий алиас в конфиге ssh
+To simplify the access to internal host the alias was configured in ssh configuration file, so the following command can be used
 ssh someinternalhost
 
-Конфиг SSH выглядит следующим образом:
+Here is the listing of the SSH configuration file:
 host bastion
         User Ganhart
         HostName 35.210.214.67
@@ -26,10 +26,10 @@ host someinternalhost
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-Разные полезные вещи:
+Useful stuff:
 
-Добавить SSH ключ для проброса в GCP
+Adding a public key for GCP access
 
-	eval $(ssh-agent)
-	ssh-add ~/.ssh/Ganhart
-	ssh-add -L - проверка
+        eval $(ssh-agent)
+        ssh-add ~/.ssh/Ganhart
+        ssh-add -L - key check
