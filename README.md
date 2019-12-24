@@ -1,7 +1,7 @@
 # Aritain_infra
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-#cloud_testapp HW description
+### cloud_testapp HW description
 
 testapp_IP = 35.190.205.2
 
@@ -29,7 +29,7 @@ As the last task, the firewall GCP rule was created via server's console with a 
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-#cloud_bastion HW description
+### cloud_bastion HW description
 
 bastion_IP = 35.210.214.67
 
