@@ -1,6 +1,16 @@
 # Aritain_infra
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### packer-base HW description
+
+During this homework a few new files were created.
+
+Ubuntu.json is a packer template for GCP image creation. This files uses a few .sh scripts in "scripts" directory for automatic dependancies installation.
+
+Also the template uses the side file variables.json (.json.example in this case) to allow tweaking the image options without modifying the template itself.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
 ### cloud_testapp HW description
 
 testapp_IP = 35.190.205.2
