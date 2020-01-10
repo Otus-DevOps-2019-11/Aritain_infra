@@ -1,6 +1,24 @@
 # Aritain_infra
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### terraform-1 HW description
+
+
+During this homework the basics of terraform was learned and a few files were created:
+
+main.tf - the main terraform file where the instructions (configuration) for terraform are located
+
+outputs.tf - describes which parameters to show the user upon execution
+
+variables.tf - contains the declaration of variables used in main.tf, so they can be specified elsewhere
+
+terraform.tfvars - contains the actual variables, which may include some sensetive data
+
+
+There is also a few files in "files" directory which are needed for application deployment, they are described in main.tf as a provisioners.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
 ### packer-base HW description
 
 During this homework a few new files were created.
