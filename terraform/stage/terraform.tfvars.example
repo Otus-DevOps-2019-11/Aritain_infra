@@ -1,0 +1,4 @@
+project          = "oceanic-monitor-123321"
+public_key_path  = "~/.ssh/Ganhart.pub"
+private_key_path = "~/.ssh/Ganhart"
+disk_image       = "reddit-base"
