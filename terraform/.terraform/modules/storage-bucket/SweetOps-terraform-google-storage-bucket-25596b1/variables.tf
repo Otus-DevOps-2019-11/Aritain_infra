@@ -48,7 +48,7 @@ variable "tags" {
 
 variable "location" {
   type        = string
-  default     = "EU"
+  default     = ""
   description = "The GCS region."
 }
 
@@ -66,7 +66,7 @@ variable "force_destroy" {
 
 variable "storage_class" {
   type        = string
-  default     = "MULTI_REGIONAL"
+  default     = "REGIONAL"
   description = "The Storage Class of the new bucket. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE."
 }
 
@@ -96,8 +96,8 @@ variable "is_live" {
 }
 
 variable "matches_storage_class" {
-  type        = list
-  default     = ["MULTI_REGIONAL"]
+  type        = "list"
+  default     = ["REGIONAL"]
   description = "Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, STANDARD, DURABLE_REDUCED_AVAILABILITY."
 }
 
@@ -116,7 +116,7 @@ variable "action_type" {
 
 variable "action_storage_class" {
   type        = string
-  default     = "MULTI_REGIONAL"
+  default     = "NEARLINE"
   description = "The target Storage Class of objects affected by this Lifecycle Rule. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE."
 }
 
@@ -135,7 +135,7 @@ variable "default_acl" {
 }
 
 variable "role_entity" {
-  type        = list
+  type        = "list"
   default     = []
   description = "List of role/entity pairs in the form ROLE:entity.Must be set if predefined_acl is not"
 }
