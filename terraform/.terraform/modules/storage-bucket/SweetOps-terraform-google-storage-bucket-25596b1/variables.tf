@@ -96,7 +96,7 @@ variable "is_live" {
 }
 
 variable "matches_storage_class" {
-  type        = "list"
+  type        = list
   default     = ["MULTI_REGIONAL"]
   description = "Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, STANDARD, DURABLE_REDUCED_AVAILABILITY."
 }
@@ -135,7 +135,7 @@ variable "default_acl" {
 }
 
 variable "role_entity" {
-  type        = "list"
+  type        = list
   default     = []
   description = "List of role/entity pairs in the form ROLE:entity.Must be set if predefined_acl is not"
 }
