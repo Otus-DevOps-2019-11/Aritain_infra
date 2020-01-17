@@ -1,4 +1,21 @@
 # Aritain_infra
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+### terraform-2 HW description
+
+During this homework the basics of moduling in terraform was learned, so a few of module directories were created including:
+
+app - for application server deployment
+db - for db server desployment
+vpc - for firewall GCP rule creating
+
+
+Also the terraform project itself was splitted on two parts: stage and prod. So the corresponding directories were created.
+
+For the last part some module was downloaded from terraform registry (actually from some person's git), the module was made for bucket creation in GCP.
+
+
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 ### terraform-1 HW description
