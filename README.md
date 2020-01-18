@@ -2,6 +2,22 @@
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### ansible-1 HW description
+
+In this homehowrk a few basic things with ansible was done. Basically there was created a correcponding directory with a few configuration files:
+
+
+ansible.cfg - which is self-explanatory, it hold some configuration values which can be used accross all project (basically a usename and it's keys)
+
+inventory & inventory.yml - a list of hosts to work with, the difference with these files is that the .yml one uses the yaml markup
+
+clone.yml - is the first playbook created, it sayd what to do with some hosts already mentioned in inventory files
+
+
+During this HW we've tried to launch clone.yml but it basically did nothing because terraform already installing the application itself so we had to actually delete the application holder to see the result on ansible execution.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
 ### terraform-2 HW description
 
 During this homework the basics of moduling in terraform was learned, so a few of module directories were created including:
