@@ -2,6 +2,14 @@
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### ansible-2 HW description
+
+Playbooks for every step added (db configuration, app configuration and deployment)
+
+Also GCP images were remade by ansible provisioners instead of bash ones
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
 ### ansible-1 HW description
 
 In this homehowrk a few basic things with ansible was done. Basically there was created a correcponding directory with a few configuration files:
