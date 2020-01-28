@@ -9,3 +9,5 @@ variables.json
 backup/**
 backup/
 *.retry
+jdauphant.nginx
+vault.key
