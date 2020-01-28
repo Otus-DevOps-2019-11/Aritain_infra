@@ -2,6 +2,13 @@
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### ansible-3 HW description
+
+A separate ansible infrastructure was implemented for prod/stage environments with a role-based model.
+
+Also the essentials about ansible-galaxy and ansible-vault was learned and implemented in a small way to the project.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
 ### ansible-2 HW description
 
