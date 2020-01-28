@@ -2,6 +2,7 @@
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+
 ### ansible-2 HW description
 
 Playbooks for every step added (db configuration, app configuration and deployment)
