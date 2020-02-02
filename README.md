@@ -2,6 +2,16 @@
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
+### ansible-4 HW description
+
+Vagrant and Molecule integrated into ansible project for testing environment.
+
+A few testing tools were installed via pip: Molecule, Testinfra, virtualenv
+
+Also a separate roles for db and app servers were created.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
 ### ansible-3 HW description
 
 A separate ansible infrastructure was implemented for prod/stage environments with a role-based model.
